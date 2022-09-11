@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="css/survey.css">
+    <link rel="stylesheet" href="css/normalize.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- header -->
+        <div class="header">
+            <h1>Survey form for Mobiles</h1>
+            <p>
+                thank you for taking the time to help us improve the platform
+            </p>
+        </div>
+        <!-- header -->
+
+        <form class="form" >
+            <div class="group">
+                <label for="Name">name</label>
+                <input type="text" placeholder="Enter your name" id="name" required>
+            </div>
+            <div class="group">
+                <label for="Age">age</label>
+                <input type="text" placeholder="Enter your age" id="Age" required>
+            </div>
+            <div class="group">
+                <label for="email">Email <span>(optinal)</span></label>
+                <input type="text" placeholder="Enter your Eame" id="email">
+            </div>
+            <div class="group">
+                <p>What type of mobile are you using?</p>
+                <select name="type" id="dropdown" required>
+                    <option disabled selected value=>
+                        select type of mobile
+                    </option>
+                    <option value="Android">
+                        Android
+                    </option>
+                    <option value="IOS">
+                        IOS
+                    </option>
+                </select>
+            </div>
+            <div class="group">
+                <p>What is the best iPhone version?</p>
+                <label>
+                    <input type="checkbox" value="Iphone" class="checkbox">
+                    Iphone
+                </label>
+                <label>
+                    <input type="checkbox" value="Iphone 3" class="checkbox">
+                    Iphone 3
+                </label>
+                <label>
+                    <input type="checkbox" value="Iphone 4" class="checkbox">
+                    Iphone 4
+                </label>
+                <label>
+                    <input type="checkbox" value="Iphone 5" class="checkbox">
+                    Iphone 5
+                </label>
+                <label>
+                    <input type="checkbox" value="Iphone 6/6+" class="checkbox">
+                    Iphone 6 /6+
+                </label>
+                <label>
+                    <input type="checkbox" value="Iphone 7/7+" class="checkbox">
+                    Iphone 7/7+
+                </label>
+                <label>
+                    <input type="checkbox" value="Iphone 8/8+" class="checkbox">
+                    Iphone 8/8+
+                </label>
+                <label>
+                    <input type="checkbox" value="Iphone X/Xmax" class="checkbox">
+                    Iphone X/Xmax
+                </label>
+                <label>
+                    <input type="checkbox" value="Iphone 11" class="checkbox">
+                    Iphone 11
+                </label>
+                <label>
+                    <input type="checkbox" value="Iphone 12" class="checkbox">
+                    Iphone 12
+                </label>
+            </div>
+            <div class="group">
+                <p>what is the best android mobile</p>
+                <label>
+                    <input type="checkbox" value="Samsung" class="checkbox">
+                    Samsung
+                </label>
+                <label>
+                    <input type="checkbox" value="OPPO" class="checkbox">
+                    OPPO
+                </label>
+                <label>
+                    <input type="checkbox" value="Hwaui" class="checkbox">
+                    Hwaui
+                </label>
+                <label>
+                    <input type="checkbox" value="Realme" class="checkbox">
+                    Realme
+                </label>
+                <label>
+                    <input type="checkbox" value="Redmi" class="checkbox">
+                    Redmi
+                </label>
+                <label>
+                    <input type="checkbox" value="Shawmi" class="checkbox">
+                    Shawmi
+                </label>
+                <label>
+                    <input type="checkbox" value="Infinix" class="checkbox">
+                    Infinix
+                </label>
+                <label>
+                    <input type="checkbox" value="Sony" class="checkbox">
+                    Sony
+                </label>
+                <label>
+                    <input type="checkbox" value="Lenovo" class="checkbox">
+                    Lenovo
+                </label>
+                <label>
+                    <input type="checkbox" value="Vivo" class="checkbox">
+                    Vivo
+                </label>
+            </div>
+            <div class="group">
+                <p>if you use Android virsion do you want to use Iphone </p>
+                <label>
+                    <input type="radio" value="Yes" class="radiobutton" name="user-recommend">
+                    Yes
+                </label>
+                <label>
+                    <input type="radio" value="No" class="radiobutton" name="user-recommend">
+                    No
+                </label>
+            </div>
+            <div class="group">
+                <p>if you use Iphone virsion do you want to use Android </p>
+                <label>
+                    <input type="radio" value="Yes" class="radiobutton" name="user-recommend2">
+                    Yes
+                </label>
+                <label>
+                    <input type="radio" value="No" class="radiobutton" name="user-recommend2">
+                    No
+                </label>
+            </div>
+            <div class="group">
+                <p>Any comments or suggestion ?</p>
+                <textarea name="comment" id="comments" placeholder="Enter your comment here"></textarea>
+            </div>
+            <div class="group">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
